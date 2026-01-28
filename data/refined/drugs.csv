@@ -1,0 +1,1377 @@
+drug_id,drug_name
+1,Aceclofenac
+2,Paracetamol
+3,Aceclofenac IP
+4,Pregabalin IP
+5,Aspirin Gastro-resistant IP
+6,Chlorzoxazone
+7,Diclofenac
+8,Diclofenac IP
+9,Serratiopeptidase
+10,Diclofenac Sodium
+11,Diclofenac Sodium Prolonged Release IP
+12,Diclofenac Sodium IP
+13,Diclofenac Gastro-Resistant IP
+14,Etoricoxib IP
+15,Ibuprofen
+16,Ibuprofen IP
+17,Indomethacin IP
+18,Azithromycin IP
+19,Nimesulide
+20,Paracetamol IP
+21,Pentazocine IP
+22,Serratiopeptidase IP
+23,Tramadol Hydrochloride
+24,Tramadol HCl
+25,Tramadol
+26,Aciclovir IP
+27,Amikacin IP
+28,Metformin Hydrochloride Prolonged-release
+29,Glimepiride
+30,Amoxycillin
+31,Potassium Clavulanate
+32,IP per
+33,Cloxacillin
+34,Amoxycillin Trihydrate Dispersible IP
+35,Amoxycillin IP
+36,Ampicillin IP
+37,Azithromycin Dispersible
+38,Cefadroxil Dispersible
+39,Cefadroxil IP
+40,Cefixime IP
+41,Cefoperazone
+42,Sulbactam
+43,Cefoperazone IP
+44,Cefotaxime Sodium
+45,Sulbactam Sodium
+46,Cefotaxime Sodium IP
+47,Cefpodoxime Proxetil Dispersible
+48,Cefpodoxime IP
+49,Ceftazidime IP
+50,Ceftriaxone
+51,Tazobactam
+52,Ceftriaxone IP
+53,Cefuroxime Axetil IP
+54,Cephalexin IP
+55,Ciprofloxacin
+56,Tinidazole
+57,Ciprofloxacin Hydrochloride IP
+58,Clotrimazole IP
+59,Doxycycline IP
+60,Erythromycin Stearate IP
+61,Gentamicin Sulphate IP
+62,Levofloxacin IP
+63,Meropenem IP
+64,Norfloxacin
+65,Norfloxacin IP
+66,Ofloxacin
+67,Ornidazole
+68,Ofloxacin IP
+69,Piperacillin
+70,Tazobactum
+71,Roxithromycin IP
+72,Tinidazole IP
+73,Vancomycin Hydrochloride Intravenous Infusion IP
+74,Adapalene
+75,Beclomethasone Dipropionate
+76,Clotrimazole
+77,Gentamicin Sulphate
+78,Beclomethasone
+79,Neomycin
+80,Chlorhexidine Mouthwash IP
+81,Clobetasol Propionate IP
+82,Fusidic Acid IP
+83,Ketoconazole Lotion
+84,Povidone Iodine
+85,Povidone-Iodine IP
+86,Silver Sulphadiazine
+87,Chlorhexidine Gluconate
+88,Allantoin
+89,Aloe vera
+90,Glibenclamide IP
+91,Gliclazide IP
+92,Glimepiride IP
+93,Glipizide IP
+94,Soluble Insulin IP
+95,Insulin IP
+96,Metformin Hydrochloride Sustained Release IP
+97,Metformin Hydrochloride IP
+98,Pioglitazone IP
+99,Pioglitazone
+100,Metformin
+101,Bleomycin IP
+102,Cisplatin IP
+103,Cisplatin
+104,Doxorubicin IP
+105,Etoposide IP
+106,Gemcitabine IP
+107,Tamoxifen Citrate IP
+108,Ciprofloxacin IP
+109,Mannitol IP
+110,Mannitol Intravenous Infusion IP
+111,Metronidazole Infusion IP
+112,Albendazole IP
+113,Albendazole
+114,Ivermectin
+115,Bisacodyl IP
+116,Tricholine Citrate
+117,Cyproheptadine Hydrochloride
+118,per
+119,Dicyclomine IP
+120,Dicyclomine Hydrochloride
+121,Domperidone IP
+122,Dried Aluminium Hydroxide
+123,Magnesium Hydroxide
+124,Activated Dimethicone
+125,Famotidine IP
+126,Furazolidone IP
+127,Hyoscine Butylbromide IP
+128,Lactulose IP
+129,Metoclopramide IP
+130,Metronidazole IP
+131,Misoprostol IP
+132,Omeprazole
+133,Domperidone
+134,Omeprazole Gastro-resistant IP
+135,Ondansetron IP
+136,Ornidazole IP
+137,Pantoprazole Gastro IP
+138,Pantoprazole
+139,Rabeprazole
+140,Rabeprazole Gastro IP
+141,Ranitidine IP
+142,Calcium
+143,Vitamin D
+144,Pyridoxine Hydrochloride
+145,Doxylamine
+146,Folic Acid
+147,Folic Acid IP
+148,Budesonide Nebuliser
+149,Budesonide Inhalation IP
+150,Cetirizine IP
+151,Cetrizine Hydrochloride IP
+152,Etophyllin
+153,Theophylline
+154,Fexofenadine Hydrochloride IP
+155,Fexofenadine IP
+156,Levocetrizine IP
+157,Montelukast Sodium IP
+158,Montelukast Sodium
+159,Levocetirizine
+160,Pheniramine Maleate IP
+161,Promethazine IP
+162,Salbutamol Inhalation IP
+163,Salbutamol IP
+164,Adenosine IP
+165,Amlodipine
+166,Atenolol
+167,Amlodipine IP
+168,Atenolol IP
+169,Atorvastatin IP
+170,Clonidine IP
+171,Clopidogrel IP
+172,Clopidogrel
+173,Aspirin
+174,Diltiazem IP
+175,Dobutamine IP
+176,Dopamine Hydrochloride IP
+177,Enalapril IP
+178,Enoxaparin IP
+179,Frusemide IP
+180,Heparin Sodium IP
+181,Isosorbide Dinitrate IP
+182,Lisinopril
+183,Lisinopril IP
+184,Losartan Potassium
+185,Hydrochlorothiazide
+186,Losartan IP
+187,Metoprolol IP
+188,Metoprolol Extended release IP
+189,Ramipril IP
+190,Simvastatin IP
+191,Telmisartan
+192,Telmisartan IP
+193,Tranexamic Acid IP
+194,α-β Arteether
+195,Chloroquine Phosphate IP
+196,Disodium Hydrogen Citrate
+197,Rehydration Salts IP
+198,Alprazolam IP
+199,Betahistine IP
+200,Carbamazepine IP
+201,Clonazepam IP
+202,Diazepam IP
+203,Escitalopram IP
+204,Flunarizine IP
+205,Fluoxetine Hydrochloride IP
+206,Methyl Ergometrine IP
+207,Phenytoin IP
+208,Prochlorperazine IP
+209,Prednisolone IP
+210,Thyroxine Sodium IP
+211,Dexamethasone IP
+212,Allopurinol IP
+213,Clomiphene Citrate IP
+214,Atropine Sulphate IP
+215,Carboxymethylcellulose Sodium Eye IP
+216,Ciprofloxacin Eye IP
+217,Gentamicin Eye IP
+218,Xylometazoline Nasal IP
+219,Bupivacaine Hydrochloride IP
+220,Lignocaine IP
+221,Propofol IP
+222,Mifepristone IP
+223,Biphasic Isophane Insulin IP
+224,Insulin Glargine IP
+225,Glipizide
+226,Metformin Hydrochloride
+227,Voglibose IP
+228,Gliclazide Extended release
+229,Acarbose IP
+230,Metformin Hydrochloride Prolonged release IP
+231,Artesunate IP
+232,Quinine Sulphate IP
+233,Imipenem
+234,Cilastatin
+235,Clindamycin IP
+236,Clarithromycin IP
+237,Cefixime
+238,Linezolid IP
+239,Cefpodoxime
+240,Itraconazole
+241,Diethylcarbamazine IP
+242,Terbinafine IP
+243,Moxifloxacin
+244,Griseofulvin IP
+245,Aciclovir Dispersible IP
+246,Cefuroxime Axetil
+247,Liposomal Amphotericin B
+248,Ketoconazole IP
+249,Linezolid Infusion
+250,Ofloxacin Infusion IP
+251,Ivermectin Dispersible
+252,Trastuzumab
+253,Azathioprine IP
+254,Methotrexate IP
+255,Tranexamic Acid
+256,Mefenamic Acid
+257,Prazosin IP
+258,Rosuvastatin IP
+259,Heparin Sodium
+260,Benzyl Nicotinate
+261,Atorvastatin
+262,Nebivolol IP
+263,Torasemide IP
+264,Bisoprolol
+265,Carvedilol IP
+266,Diltiazem Sustained Release
+267,Acenocoumarol IP
+268,SAmlodipine IP
+269,Digoxin IP
+270,Fenofibrate
+271,Amiodarone IP
+272,Ramipril
+273,Olmesartan Medoxomil IP
+274,Isosorbide Mononitrate Sustained Release
+275,Propranolol IP
+276,Rosuvastatin
+277,Chlorthalidone
+278,Nifedipine Prolonged release IP
+279,Indapamide IP
+280,Olmesartan Medoxomil
+281,Metoprolol
+282,Amlodipine Besilate
+283,Losartan
+284,Fenofibrate IP
+285,Enalapril
+286,Olmesartan
+287,Moxonidine
+288,Spironolactone IP
+289,Labetalol Hydrochloride IP
+290,Streptokinase IP IU
+291,Warfarin IP
+292,Valsartan IP
+293,Verapamil IP
+294,Torsemide IP
+295,Labetalol IP
+296,Hydroquinone
+297,Mometasone
+298,Tretinoin
+299,Betamethasone Valerate
+300,Neomycin Sulfate
+301,Clioquinol
+302,Mupirocin IP
+303,Ursodeoxycholic Acid IP
+304,Bacillus Clausii Spores
+305,Esomeprazole
+306,Levosulpiride
+307,Doxylamine Succinate
+308,Sucralfate
+309,Liquid Paraffin
+310,Milk of Magnesia
+311,Sodium Picosulphate
+312,Chlordiazepoxide
+313,Clidinium Bromide
+314,Sorbitol
+315,Rifaximin
+316,Loperamide IP
+317,Esomeprazole IP
+318,Pancreatin
+319,Lansoprazole IP
+320,Sulfasalazine Gastro-resistant
+321,Itopride IP
+322,Sulfasalazine Delayed Release
+323,Dydrogesterone IP
+324,Combipack of Mifepristone IP
+325,& Misoprostol IP
+326,Ferrous Ascorbate
+327,Norethisterone IP
+328,Levo-Thyroxine Sodium IP
+329,Betamethasone Sodium Phosphate IP
+330,Deflazacort
+331,Methylprednisolone Sodium Succinate
+332,Nandrolone Decanoate IP
+333,Carbimazole IP
+334,Levetiracetam IP
+335,Hydroxychloroquine IP
+336,Piroxicam IP
+337,Aceclofenac Sustained Release
+338,Thiocolchicoside
+339,Baclofen IP
+340,Ketorolac Tromethamine IP
+341,Tramadol Prolonged Release IP
+342,Alfacalcidol Soft Gelatin
+343,Naproxen IP
+344,Linceed Oil
+345,Methyl Salicylate
+346,Menthol
+347,Phenylephrine
+348,Chlorpheniramine
+349,Levosalbutamol
+350,Ipratropium
+351,Formoterol
+352,Budesonide
+353,Salmeterol
+354,Fluticasone
+355,Ambroxol Hydrochloride
+356,Guaifenesin
+357,Levosalbutamol Sulphate
+358,Acetylcysteine
+359,Acebrophylline
+360,Fluticasone Propionate Respules
+361,Doxofylline IP
+362,Fexofenadine Hydrochloride
+363,Azelastine Hydrochloride
+364,Fluticasone Propionate
+365,Fluticasone Propionate Nasal IP
+366,Loratadine IP
+367,Oxymetazoline Hydrochloride Nasal IP
+368,Tiotropium Bromide
+369,Formoterol Fumarate Dihydrate
+370,Ciclesonide
+371,Ipratropium Bromide Respirator
+372,Salbutamol
+373,Sildenafil IP
+374,Tadalafil IP
+375,Tamsulosin Hydrochloride
+376,Dutasteride
+377,Calcium Carbonate
+378,Calcitriol
+379,Zinc
+380,Cyproheptadine IP
+381,Cholecalciferol Granules
+382,Methylcobalamin
+383,L- Carnitine L- Tartrate
+384,Vitamin E Softgel
+385,Cyanocobalamine
+386,Nicotinamide
+387,Thiamine
+388,Cyanocobalamin
+389,Pyridoxine IP
+390,Pregabalin
+391,Disulfiram IP
+392,Cetirizine Dihydrochloride
+393,Phenylephrine Hydrochloride
+394,Betamethasone Dipropionate
+395,Salicylic Acid
+396,Silver Nitrate
+397,Cyproheptadine Hydrochloride IP
+398,Povidone-Iodine Powder
+399,Diclofenac Potassium
+400,Paradichlorobenzene
+401,Benzocaine
+402,Chlorbutol
+403,Turpentine Oil
+404,Bromhexine Hydrochloride
+405,Ketoconazole Shampoo
+406,Etophylline
+407,Etamsylate
+408,Clindamycin Phosphate
+409,Clobetasol Propionate
+410,Miconazole
+411,Chlorocresol
+412,Terbutaline Sulphate
+413,Bromhexine
+414,Guaiphenesin
+415,Sodium Citrate
+416,Chlorpheniramine Maleate
+417,Nimesulid
+418,Diclofenac Dithylamine
+419,Linseed Oil
+420,Simethicone
+421,Pepsin
+422,Fungal Diastase Enyme
+423,v/v Cetrimide
+424,Gama Benzene Hexachloride
+425,Cetrimide
+426,Glucosamine
+427,Diacerein
+428,Methylsulfonylmethane
+429,Mometasone Furoate IP
+430,Biotin
+431,Triamcinolone Acetonide Mouth Ulcer
+432,Flupentixol
+433,Nalidixic Acid IP
+434,Finasteride IP
+435,Rabeprazole Sodium
+436,Itopride Hydrochloride Prolonged release
+437,Pantoprazole Sodium
+438,Itopride Hydrochloride
+439,Magaldrate
+440,Clotrimazole Vaginal IP
+441,Timolol Maleate Eye IP
+442,Ofloxacin Eye IP
+443,Olopatadine Hydrochloride Ophthalmic IP
+444,Tropicamide Eye IP
+445,Polymyxin B Sulphate
+446,Chloramphenicol
+447,Dexamethasone
+448,Sulphacetamide Eye IP
+449,Acyclovir Eye IP
+450,Pilocarpine Eye IP
+451,Cephalexin Dry
+452,Levofloxacin Infusion IP
+453,Piroxicam Dispersible
+454,Piroxicam bezyl alcohol
+455,Glibenclamide
+456,Glycerin IP
+457,Etodolac IP
+458,Escitalopram Oxelate
+459,Clonazepam
+460,Water amp polypack
+461,Dextrose Intravenouse Infusion IP
+462,Dextrose IP
+463,Dextrose
+464,Sodium Chloride
+465,Sodium Chloride IP
+466,Progesterone Sustained Release
+467,Dehydroepiandrosterone
+468,Megestrol Acetate IP
+469,Valganciclovir Hydrochloride USP
+470,Clotrimazole Powder
+471,Beclometasone Dipropionate
+472,Cefuroxime IP
+473,Nortriptyline IP
+474,Etizolam IP
+475,L-Methylfolate calcium
+476,Acetazolamide IP
+477,Acetylsalicylic Acid Gastro-resistant IP
+478,Alpha Lipolic Acid
+479,Pyridoxine
+480,Alprazolam
+481,Fluoxetine
+482,Amisulpride IP
+483,Amitriptyline Hydrochloride IP
+484,Anastrozole IP
+485,Aspirin Enteric Coated IP
+486,Aspirin Gastro-resistant
+487,Atracurium Besylate I.P
+488,Bacitracin
+489,Sulphacetamide
+490,Betamethasone IP
+491,Bicalutamide IP
+492,/ml (
+493,Soluble Insulin
+494,Bortezomib IP
+495,Bromfenac Sodium Eye
+496,Bromocriptine Mesylate IP
+497,Cabergoline IP
+498,Calcitriol IP
+499,Calcium Acetate
+500,Magnesium Oxide
+501,Manganese Sulphate
+502,Calcium Gluconate IP
+503,Chloramphenicol Eye IP
+504,Trifluoperazine
+505,Chlorthalidone IP
+506,Cholecalciferol
+507,Glucosamine Sulphate
+508,Chondroitin
+509,Cilnidipine IP
+510,Cilostazol IP
+511,Citicoline IP
+512,Cyclosporin IP
+513,Dacarbazine IP
+514,Daunorubicin Hydrochloride IP
+515,Dextromethorphan Hydrobromide IP
+516,Diacerein IP
+517,Dicyclomine Hydrochloride IP
+518,Donepezil Hydrochloride IP
+519,Drotaverine Hydrochloride
+520,Drotaverine Hydrochloride IP
+521,Ebastine IP
+522,Efavirenz IP
+523,Ethinylestradiol
+524,Levonorgestrel
+525,Febuxostat
+526,Frusemide
+527,Spironolactone
+528,Gabapentin
+529,Gabapentin IP
+530,Glyceryl Trinitrate Controlled Release
+531,Human Chorionic Gonadotrophin IP
+532,Hydrochlorothiazide IP
+533,Hydrocortisone Sodium Succinate IP
+534,Hydroxyzine Hydrochloride IP
+535,Imatinib Mesylate IP
+536,Imipramine Hydrochloride IP
+537,Isosorbidemononitrate IP
+538,Isoxsuprine Hydrochloride IP
+539,Ketoconazole
+540,Lamotrigine
+541,Leflunomide IP
+542,Lenalidomide
+543,Letrozole IP
+544,Leuprolide Acetate Injections
+545,Levocarnitine Injections
+546,Levocarnitine
+547,Levosalbutamol Inhaler
+548,Lignocaine Hydrochloride IP
+549,Lithium Carbonate Prolonged Release IP
+550,Lorazepam IP
+551,Medroxyprogesterone Acetate IP
+552,Mefloquine Hydrochloride IP
+553,Memantine Hydrochloride IP
+554,Metformin Sustained Release IP
+555,Fluocinolone Acetonide
+556,Mirtazapine IP
+557,Mycophenolate Mofetil IP
+558,Natural Micronised Progesterone
+559,Nebivolol
+560,Nepafenac Eye
+561,Nitrazepam I.P
+562,Nitrofurantoin I.P
+563,Olanzapine IP
+564,Oxaliplatin Injections IP
+565,Paclitaxel IP
+566,Paroxetine Prolonged Release IP
+567,Permethrin
+568,Phenobarbitone IP
+569,Phytomenadione IP
+570,Piracetam
+571,Pyrazinamide IP
+572,Quetiapine Fumarate IP
+573,Quetiapine IP
+574,Erythropoietin IP
+575,Risperidone
+576,Trihexiphenidyl
+577,Risperidone IP
+578,Sertraline IP
+579,Sodium Valproate Enteric Coated IP
+580,Sodium Valproate Gastro-Resistant IP
+581,Sofosbuvir IP
+582,Oxetacaine
+583,Tamsulosin Hydrochloride Prolonged Release IP
+584,Teneligliptin IP
+585,Tenofovir Disoproxil Fumarate IP
+586,Tizanidine I.P
+587,Trihexyphenidyl Hydrochloride IP
+588,Trimetazidine Hydrochloride Modified Release
+589,Vecuronium Bromide I.P
+590,Vitamin A IP
+591,Voglibose
+592,Zoledronic Acid IP
+593,Zolpidem IP
+594,Metoprolol Succinate
+595,Clobazam IP
+596,Nortriptyline
+597,Cinnarizine IP
+598,Moxifloxacin Hydrochloride Eye IP
+599,Clomipramine Hydrochloride Sustained release
+600,Fluvoxamine Maleate IP
+601,Aripiprazole IP
+602,Teneligliptin
+603,Carbamazepine Prolonged-release IP
+604,Diethylcarbamazine Citrate IP
+605,Ketorolac IP
+606,Carboplatin IP
+607,Cyclophosphamide IP
+608,Cyclosporin Capulses IP
+609,Cyclosporine IP
+610,Glycopyrrolate IP
+611,Hydroxyurea IP
+612,Ifosfamide IP
+613,Protamine Sulphate IP
+614,Docetaxel IP
+615,Erlotinib IP
+616,Gefitinib IP
+617,Pemetrexed IP
+618,Temozolomide IP
+619,Oseltamivir IP
+620,Artemether
+621,Lumefantrine
+622,Carbonyl Iron
+623,Orlistat
+624,Triamcinolone Acetonide IP
+625,Triamcinolone IP
+626,Amitriptyline
+627,Vitamin E Acetate
+628,Noscapine
+629,Prazosin Hydrochloride Sustained Release
+630,Gliclazide
+631,Cefaclor Dispersible
+632,Fluconazole IP
+633,Haematinic of Iron
+634,Vitamin B
+635,Calcium Phosphate
+636,Diphenhydramine
+637,Ammonium Chloride
+638,Montelukast
+639,Allylestrenol
+640,Amiloride
+641,Chlordiazepoxide IP
+642,Cilnidipine
+643,Cinitapride
+644,Ranitidine
+645,Donepezil IP
+646,Drotaverine
+647,Duloxetine Gastro-resistant IP
+648,Escitalopram Oxalate
+649,Desogestrel
+650,Faropenem
+651,Flavoxate IP
+652,Fluticasone Furoate Nasal
+653,Isoxsuprine IP
+654,Mebendazole IP
+655,Mebeverine Hydrochloride IP
+656,Meropenem
+657,Methylprednisolone IP
+658,Modafinil IP
+659,Prasugrel IP
+660,Aspirin Gastro
+661,Sertaconazole Nitrate IP
+662,Teicoplanin IP
+663,Terlipressin
+664,Thiocolchicoside IP
+665,Tigecycline IP
+666,Trypsin
+667,Bromelain
+668,Rutoside Trihydrate
+669,Valethamate
+670,Tobramycin Eye
+671,Capecitabine IP
+672,Cefpodoxime Proxetil IP
+673,Janaushadhi Protein Powder
+674,Janaushadhi Urja
+675,Janaushadhi Janani
+676,Lamotrigine Dispersible IP
+677,Pyrantel Pamoate IP
+678,Theophylline Prolonged-release IP
+679,Pyridoxine Hydrochloride Sustained release
+680,Terbutaline
+681,Ambroxol
+682,L-Arginine Granules
+683,Luliconazole IP
+684,Vildagliptin IP
+685,Vildagliptin
+686,Hand Sanitizer
+687,Canagliflozin
+688,Mesalazine Prolonged release IP
+689,Selenium Sulphide Shampoo
+690,Acebrophylline Sustained Release
+691,Tizanidine
+692,Acitretin IP
+693,Acotiamide
+694,Amantadine Hydrochloride IP
+695,Bisoprolol Fumarate
+696,Amorolfine
+697,Dicloxacillin
+698,Lactic Acid Bacillus
+699,Ampicillin
+700,Di-Cloxacillin
+701,Anti-D Immunoglobulin
+702,Apremilast IP
+703,Azilsartan
+704,Azilsartan Medoxomil
+705,Azilsartan Medoxomil IP
+706,Bepotastine Besilate
+707,Gentamicin
+708,Miconazole Nitrate
+709,Bilastine
+710,Bimatoprost Ophthalmic
+711,Brimonidine Tartrate
+712,Timolol Maleate
+713,Brimonidine Tartrate Eye IP
+714,Calcium Citrate Malate
+715,Vitamin K
+716,Camylofin Dihydrochloride
+717,Coenzyme Q
+718,Lycopene
+719,Selenium
+720,Carboxymethlycellulose Eye IP
+721,Cephalexin Extended Release
+722,Cerebroprotein Hydrolysate
+723,Chloramphenicol IP
+724,Amitriptyline Hydrochloride
+725,Cholecalciferol Chewable
+726,Pantoprazole Gastro-resistant
+727,Cinitapride Sustained release
+728,Citicoline
+729,Clindamycin
+730,Neomycin Sulphate
+731,Selenium Sulfide
+732,Clotrimazole Mouth Paint
+733,Colistin Sulphate IP
+734,Collagen Peptide
+735,Sodium Hyaluronate
+736,Chondroitin Sulfate
+737,Vitamin C
+738,Dabigatran Etexilate Mesilate
+739,Dapagliflozin
+740,Desloratadine
+741,Diclofenac Diethylamine
+742,Thiocholchicoside
+743,Methylsalicylate
+744,Metaxalone
+745,Diclofenac Prolonged release IP
+746,Sodium Tauroglycocholate
+747,Diltiazem Hydrochloride Extended Release
+748,Diphenoxylate Hydrochloride
+749,Atropine sulphate
+750,Divalproex IP
+751,Dorzolamide
+752,Timolol
+753,Dorzolamide Eye IP
+754,Dosulepin
+755,Dosulepine IP
+756,Efavirenz
+757,Emtricitabine
+758,Tenofovir Disoproxil Fumarate
+759,Empagliflozin
+760,Entecavir IP
+761,Eplerenone IP
+762,Erythromycin Estolate
+763,Etoricoxib
+764,Evening Primrose Oil
+765,Zinc Sulphate
+766,Melitracen
+767,Fluticasone Propionate IP
+768,Formoterol Fumarate
+769,Framycetin Skin
+770,Fungal Diastase
+771,Papain
+772,Activated Charcoal
+773,Fusidic Acid
+774,Nortryptyline
+775,Glargine
+776,Human Normal Immunoglobulin Intravenous use IP
+777,Human Normal Immunoglobulin IP
+778,Hydroxypropylmethylcellulose Eye
+779,Hydroxyzine IP
+780,Hyoscine Butylbromide
+781,Paracetamol/Acetaminophen
+782,Indacaterol
+783,Glycopyrronium
+784,Isosorbide
+785,Hydralazine
+786,Isotretinoin IP
+787,Ivabradine
+788,Ketoconazole Soap
+789,L-Methylfolate Calcium
+790,Pyridoxal
+791,Mecobalamin
+792,L-Methylfolate
+793,& Methylcobalamin
+794,L- Ornithine L-Aspartate Infusion
+795,Lactitol
+796,m Ispaghula
+797,L-carnitine
+798,Ubidecarenone
+799,Astaxanthin
+800,Lecithin
+801,Levocetirizine Dihydrochloride IP
+802,Levodopa
+803,Carbidopa
+804,Levodropropizine
+805,Levosalbutamol Respules
+806,Linagliptin
+807,Megaldrate
+808,Metadoxine
+809,Silymarin
+810,L- Ornithin L- Aspartate
+811,Alpha Lipoic Acid
+812,Metoprolol Succinate extended release IP
+813,Metoprolol Succinate Prolonged release IP
+814,Minoxidil
+815,Finasteride
+816,Naproxen
+817,S- Amlodipine
+818,Polymyxin B Sulfates
+819,Bacitracin Zinc
+820,Nicorandil IP
+821,Nicoumalone/Acenocoumarol IP
+822,Nifedipine Sustained Release IP
+823,Ofloxaxin
+824,Flavoxate
+825,Omeprazole Gastro-resistant
+826,Domperidone Sustained Release
+827,Oxaceprol
+828,L-Ornithine L-Aspartate
+829,Paracetamol Infusion IP
+830,Caffeine
+831,Dextromethorphan
+832,Pirfenidone IP
+833,Calcium Polystyrene Sulphonate Powder
+834,Prazosin Extended Release
+835,Probiotic Microbes
+836,Prucalopride
+837,Racecadotril IP
+838,Ranolazine Extended Release
+839,Rivaroxaban
+840,Rosehip Extract
+841,Devil's Claw Extract
+842,Boswellia serrata Extract
+843,S Amlodipine IP
+844,S Amlodipine
+845,Saccharomyces Boulardii
+846,Saccharomyces Boulardii Powder
+847,Sacubitril
+848,Valsartan
+849,Salbutamol Rotacaps
+850,Salicylic acid
+851,Dithranol
+852,Coal Tar
+853,Saroglitazar
+854,Saxagliptin
+855,Sitagliptin Phosphate
+856,& Metformin Hydrochloride
+857,Sitagliptin Phosphate IP
+858,Sodium Valproate IP
+859,Sodium Valproate
+860,Valproic acid
+861,Tacrolimus
+862,Terbinafine Hydrochloride IP
+863,Tetrabenazine
+864,Ticagrelor IP
+865,Tiotropium Bromide Inhalation
+866,Tiotropium Powder Inhalation IP
+867,Tolvaptan
+868,Torsemide
+869,Travoprost Ophthalmic IP
+870,Trimetazidine Hydrochloride Controlled Release
+871,Valacyclovir
+872,Vitamin D IU
+873,Vitamin-C Chewable
+874,Alfuzosin Prolonged-release IP
+875,Alfuzosin
+876,Citric Acid
+877,Potassium Citrate
+878,Darifenacin Prolonged Release IP
+879,Dutasteride IP
+880,Mirabegron Extended-release
+881,Magnesium Citrate
+882,Silodosin
+883,Solifenacin Succinate IP
+884,Tolterodine Tartrate
+885,Tolterodine Tartrate Extended Release
+886,Azithromycin Eye
+887,Betaxolol Eye IP
+888,Brinzolamide Ophthalmic IP
+889,Bromfenac
+890,Epalrestat Sustained Release
+891,Gatifloxacin
+892,Prednisolone
+893,Homatropine Hydrobromide Eye IP
+894,Levofloxacin Eye
+895,Natamycin Ophthalmic IP
+896,Arteether
+897,Artesunate
+898,"Tablets, Sulfadoxine"
+899,Pyrimethamine
+900,Primaquine Phosphate IP
+901,Agomelatine
+902,Propranolol Hydrochloride
+903,Sertraline Hydrochloride
+904,Amoxapine IP
+905,Bupropion Prolonged-release IP
+906,Chlorpromazine IP
+907,Cinnarizine
+908,Dimenhydrinate
+909,Citalopram IP
+910,Clonazepam Mouth Dissolving
+911,Clomipramine Hydrochloride
+912,Clozapine IP
+913,Doxepin IP
+914,Duloxetine Gastro IP
+915,Olanzapine
+916,Paroxetine Extended Release
+917,Eicosapentaenoic Acid
+918,Docosahexaenoic Acid
+919,Aloe Vera
+920,Vitamin E
+921,N-Acetylcysteine
+922,Taurine
+923,Biphasic Insulin Lispro IP
+924,Insulin Aspart IP
+925,Repaglinide IP
+926,Repaglinide
+927,Clavulanic Acid
+928,Cefdinir IP
+929,Tolperisone
+930,Cefprozil
+931,Ceftazidime
+932,Polymyxin B
+933,Glycolic Acid
+934,Carboprost
+935,Dinoprostone
+936,Cyproterone
+937,Potassium Nitrate Toothpaste
+938,Sodium Bicarbonate
+939,Dill Oil
+940,Fennel Oil
+941,Racecadotril Sachet IP
+942,Daclatasvir
+943,Minoxidil IP
+944,Ulipristal Acetate
+945,Desmopressin
+946,Ropinirole IP
+947,Bimatoprost
+948,Mesalazine Delayed release
+949,Tacrolimus IP
+950,Sofosbuvir
+951,Velpatasvir
+952,Atazanavir
+953,Ritonavir
+954,Sodium Hyaluronate Eye
+955,Voriconazole IP
+956,Esomeprazole Gastro-Resistance IP
+957,Pantoprazole Gastro-Resistance IP
+958,Tadalafil
+959,Dapoxetine
+960,Levonorgestrel IP
+961,Ferrous Asparto Glycinate
+962,Riboflavin
+963,Niacinamide
+964,Cholecalciferol Soft Gelatin
+965,Divalproex Prolonged release IP
+966,L-Carnitine-L-Tartrate
+967,Co-Enzyme Q
+968,Zinc Oxide
+969,Inositol
+970,Chromium Picolinate
+971,Selenium Dioxide
+972,Benfotiamine
+973,Halobetasol Propionate
+974,Metronidazole
+975,Lidocaine
+976,Benzalkonium Chloride
+977,Povidone Iodine Gargle
+978,Ketorolac Tromethamine Dispersible
+979,Benzoyl Peroxide IP
+980,Bifonazole IP
+981,Bisacodyl Suppositories IP
+982,Calcipotriol
+983,Calcium Dobesilate Monohydrate
+984,Carbamazepine Prolonged release IP
+985,Carica papaya leaf Extract
+986,Goat Milk
+987,Tinospora Cordifolia
+988,Papaya Leaf Extract
+989,Carvedilol Phosphate Extended Release
+990,Lignocaine Hydrochloride
+991,Cod liver oil
+992,Evening primrose oil
+993,Omega- acid
+994,Combipack of Clarithromycin
+995,"IP, Esomeprazole"
+996,IP Amoxycillin
+997,Diclofenac Sodium Suppositories
+998,Divalproex Sodium Extended Release IP
+999,Dosulepin IP
+1000,Doxofylline
+1001,Etizolam
+1002,Glucosamine USP
+1003,Isosorbide Mononitrate Sustained release
+1004,Ketorolac Tromethamine Ophthalmic
+1005,Lacosamide
+1006,Metoprolol Succinate Extended Release IP
+1007,Miconazole Nitrate IP
+1008,Mometasone Aqueous Nasal IP
+1009,Mycophenolate Sodium Gastro-resistant
+1010,Myo-Inositol
+1011,Nitroglycerin Controlled Release
+1012,Oxcarbazepine IP
+1013,Potassium Magnesium Citrate
+1014,D-Mannose
+1015,Cranberry extract
+1016,Prednisolone Sodium Phosphate Eye IP
+1017,Ribavirin USP
+1018,Torasemide
+1019,Sumatriptan
+1020,Zinc Sulphate Dispersible IP
+1021,Pyridostigmine Bromide IP
+1022,Budesonide Powder Inhalation IP
+1023,Combikit of Eplerenone
+1024,Estradiol
+1025,Beclomethasone Dipropionate Inhalation IP
+1026,Beclomethasone Dipropionate Rotacaps
+1027,Benidipine Hydrochloride
+1028,Calcium Pantothenate
+1029,Diethylcarbamazine
+1030,Eberconazole
+1031,Enalapril Maleate IP
+1032,Esomeprazole Magnessium
+1033,Evogliptin
+1034,Metformin Hydrochloride Sustained Release
+1035,Evogliptin Tartarate
+1036,Flupirtine Maleate
+1037,Di-Hydralazine Hydrochloride
+1038,Ibandronic Acid
+1039,Ilaprazole
+1040,Lornoxicam
+1041,Meloxicam
+1042,Mesalamine Delayed Release
+1043,Metformin Hydrchloride
+1044,Glimipride
+1045,Metolazone
+1046,Prednisolone Acetate
+1047,Paroxetin Prolonged-release IP
+1048,Paroxetine Prolonged-release IP
+1049,Pramipexole Dihydrochloride
+1050,Progesterone
+1051,Remogliflozin Etabonate
+1052,Ropinirole
+1053,Selegiline Hydrochloride
+1054,Sevelamer Carbonate
+1055,Sustained Release) Flunarizine Dihydrochloride
+1056,Tenofovir Alafenamide IP
+1057,Verapamil Hydrochloride Prolonged Release
+1058,Ziprasidone
+1059,Perindopril Erbumine
+1060,Indapamide
+1061,Hydroxyprogesterone
+1062,Hydroxyprogesterone IP
+1063,Acarbose
+1064,Acetylcysteine Effervescent
+1065,Alendronate Sodium USP
+1066,& Hydrochlorothiazide
+1067,Perindopril
+1068,Protein Powder
+1069,Janaushadhi Women Protein
+1070,Abacavir
+1071,Dolutegravir
+1072,Lamivudine
+1073,Recombinant Human Tissue type Plasminogen Activator
+1074,Caffeine Citrate
+1075,Colchicine
+1076,Midazolam
+1077,Rituximab
+1078,Somatotropin
+1079,Thiamine Hydrochloride IP
+1080,Nicotine
+1081,Nicotine Strips
+1082,Ondansetron
+1083,Sildenafil
+1084,Sitagliptin
+1085,Duloxetin
+1086,Bempedoic Acid
+1087,Dextromethorphan Hydrobromide Lozenges
+1088,Vitamin A
+1089,Para Aminobenzoic Acid
+1090,Calcium Pant
+1091,L-Arginine
+1092,L-Cysteine
+1093,DL-Methionine
+1094,L-Lysine
+1095,Ferrous
+1096,Copper
+1097,Abiraterone Acetate
+1098,Acamprosate Calcium
+1099,L-Methyl Folate
+1100,Benzoyl Peroxide
+1101,Alogliptin
+1102,Armodafinil
+1103,Baclofen
+1104,Benazepril
+1105,Benidipine
+1106,Bosentan
+1107,Brinzolamide
+1108,Brimonidine
+1109,Ophthalmic
+1110,Brivaracetam IP
+1111,Magnesium
+1112,L- Methylfolate
+1113,Calcium Citrate
+1114,Nadifloxacin
+1115,Dapoxetine IP
+1116,Dasatinib
+1117,Tamsulosin
+1118,Desvenlafaxine Extended Release
+1119,Dexlansoprazole MR
+1120,Donepezil
+1121,Memantine
+1122,Flurbiprofen
+1123,Eye
+1124,Flupentixole
+1125,Fluromethalone
+1126,Tannic Acid Glycerin
+1127,Potassium Iodide
+1128,Iodine
+1129,Thymol
+1130,Lactic Acid
+1131,Lapatinib IP
+1132,Lithium Carbonate IP
+1133,L-Methylfoate Calcium
+1134,Vit K
+1135,Vit D
+1136,Lutein
+1137,Zeaxanthin
+1138,Omega Acid
+1139,EPA
+1140,DHA
+1141,Bilberry Extract
+1142,& Zeaxanthin
+1143,Beta carotene
+1144,Modafinil
+1145,Nicoumalone
+1146,Nintedanib Soft gelatin
+1147,Nitazoxanide
+1148,Obeticholic Acid
+1149,Olopatadine Hydrochloride
+1150,Ketorolac
+1151,Oxybutynin Chloride
+1152,Polyethylene Glycol
+1153,Propylene Glycol
+1154,Pomalidomide
+1155,Pramipexole
+1156,Procyclidine
+1157,S-Adenosyl L-Methionine
+1158,S-Adenosyl L- Methionine
+1159,Sevelamer
+1160,Tapentadol
+1161,Topiramate
+1162,Trazodone Hydrochloride
+1163,Venlafaxine Prolonged Release
+1164,Vildaglipitin
+1165,Zonisamide
+1166,Melatonin
+1167,Methimazole
+1168,Shilajit
+1169,Triphala
+1170,Ashwagandha
+1171,Madhu
+1172,Chyawanprash Special
+1173,Cyclobenzaprine
+1174,Amorolfine Nail Lacquer
+1175,Apixaban
+1176,Ezetimibe
+1177,Azelaic acid
+1178,Benzoic acid
+1179,Azelnidipine IP
+1180,Azelnidipine
+1181,Baricitinib
+1182,Bethanechol Chloride
+1183,Bortezomib
+1184,m Avibactam
+1185,Ciclopirox Olamine
+1186,Ciclopirox Olamine Nail Lacquer
+1187,Conjugated Estrogens
+1188,Crizotinib
+1189,Sesame Oil
+1190,Eltrombopag
+1191,Ezetimibe IP
+1192,Hydrocortisone Acetate
+1193,Licorice Extract
+1194,Hydrocortisone Acetate IP
+1195,Leflunomide
+1196,Lincomycin
+1197,Macitentan
+1198,Mebendazole
+1199,Metoclopramide Hydrochloride IP
+1200,Metoprolol Extended Release IP
+1201,Midodrine Hydrochloride
+1202,Nintedanib Soft Gelatin
+1203,Rehydration Salts IP Orange Flavour Sachet
+1204,Ozenoxacin
+1205,Ozenoxacin Lotion
+1206,Pazopanib
+1207,Penicillin G
+1208,Sorafenib
+1209,Sunitinib
+1210,Metoprolol ER
+1211,Chlorthalidon
+1212,Thalidomide
+1213,Topiroxostat
+1214,Travoprost
+1215,Vortioxetine
+1216,Povidone- Iodine IP
+1217,gel
+1218,Ambrisentan
+1219,Betamethasone Sodium Phosphate
+1220,Calamine
+1221,Light Liquid Paraffin
+1222,Sodium Fluoride
+1223,Zinc Chloride
+1224,Chloroxylenol
+1225,Terpineol
+1226,"v/v, Absolute Alcohol"
+1227,Clotrimazole Vaginal
+1228,Combi kit of Torasemide
+1229,Eplerenone
+1230,Combipack of Ambrisentan
+1231,Deferasirox Dispersible
+1232,Deferiprone
+1233,Denosumab
+1234,Sesame oil
+1235,Linseed oil
+1236,& Menthol
+1237,Absolute alcohol
+1238,Duloxetin Hydrochloride
+1239,Ebastine
+1240,Efonidipine Hydrochloride Ethanolate
+1241,Entacapone IP
+1242,Etizolam Controlled release IP
+1243,Feracrylum
+1244,Centbucridine
+1245,Ferric Carboxymaltose
+1246,Fluconazole Dusting Powder
+1247,Fluocinolone acetonide
+1248,ointment
+1249,Potassium Chloride
+1250,Lignocaine
+1251,cream
+1252,Hydroxyzine Hydrochloride
+1253,Iguratimod
+1254,Imeglimin Hydrochloride
+1255,Mometasone Furoate
+1256,Ipratropium Bromide Inhaler
+1257,Itraconazole Dusting Powder
+1258,Zinc Pyrithione
+1259,Ketoconazole Dusting Powder
+1260,Ketoprofen
+1261,Proanthocyanidin
+1262,Latanoprost
+1263,Leucovorin Calcium IP
+1264,Levetiracetam Prolonged Release IP
+1265,Levocetirizine Dihydrochloride
+1266,Levocloperastine
+1267,Entacapone
+1268,Nifedipine
+1269,Prilocaine
+1270,Lobeglitazone Sulfate
+1271,Mupirocin
+1272,Molnupiravir
+1273,Naftifine Hydrochloride
+1274,Neostigmine Methylsulphate IP
+1275,Nitrofurantoin
+1276,Nitrofurantoin Sustained Release
+1277,Norethisterone Acetate Controlled Release
+1278,Panitumumab
+1279,Caraway oil
+1280,Anise Oil
+1281,Dil oil
+1282,Potassium Nitrate
+1283,Sodium Monofluoro Phosphate
+1284,Povidone Iodine IP
+1285,Quetiapine Prolonged release IP
+1286,Rasagiline
+1287,Selexipag
+1288,Sertaconazole Dusting Powder
+1289,Sirolimus
+1290,Strontium chloride hexahydrate
+1291,Terbinafine Hydrochloride Dusting Powder
+1292,Tobramycin
+1293,Fluoromethalone
+1294,Tofacitinib
+1295,Tofacitinib Extended Release
+1296,Tolperisone Hydrochloride
+1297,Tranylcypromine
+1298,Tulobuterol Transdermal patch
+1299,Acyclovir Dispersible IP
+1300,Amisulpride Sustained Release
+1301,Cabozantinib
+1302,Cariprazine
+1303,Cefazolin Sodium IP
+1304,Cyclobenzaprine Extended-release
+1305,Dexchlorpheniramine Maleate Sustained Release
+1306,Dexchlorpheniramine Maleate IP
+1307,Donepezil Hydrochloride Strips
+1308,Everolimus
+1309,Feracrylum mouth wash/Gargle
+1310,Feracrylum Sterile Antiseptic
+1311,Fluocinonide Topical
+1312,Hydrocortisone
+1313,Inosine Pranobex
+1314,Itraconazole Eye
+1315,Levocetirizine Strips
+1316,Lurasidone Hydrochloride
+1317,Maraviroc
+1318,Mecobalamin Strips
+1319,Metoprolol Tartrate
+1320,Fexofenadine
+1321,Delayed Release Esomeprazole
+1322,Nebivolol Hydrochloride IP
+1323,Nifedipine Extended Release IP
+1324,Octreotide long acting release
+1325,Octreotide
+1326,Olaparib
+1327,Oseltamivir Phosphate IP
+1328,Pilocarpine
+1329,Rebamipide
+1330,Trihexyphenidyl
+1331,Rivastigmine
+1332,Rivastigmine Transdermal Patch
+1333,Rizatriptan Benzoate Strips
+1334,Romiplostim Powder Solvent
+1335,Latanoprost Eye IP
+1336,Sildenafil Strips
+1337,Tadalafil Strips
+1338,Trazodone Hydrochloride IP
+1339,Trientine Hydrochloride
+1340,Vancomycin Hydrochloride IP
+1341,Vasopressin IP
+1342,Vincristine
+1343,Fluconazole
+1344,Azelaic Acid
+1345,Carbetocin
+1346,Enzalutamide
+1347,Filgrastim
+1348,Flecanide
+1349,Glycopyrrolate
+1350,Halobetasol & Fusidic Acid
+1351,Ibrutinib
+1352,Testosterone Enanthate
+1353,Lenvatinib IP
+1354,Methylphenidate
+1355,Naltrexone
+1356,Polmacoxib
+1357,Cefepime
+1358,Levetiracetam
+1359,Magnesium Sulphate
+1360,Minocycline
+1361,Mosapride Citrate
+1362,Olopatadine
+1363,Phenobarbitone
+1364,Phenobarbitone Sodium
+1365,Rupatadine
+1366,Absorbent Cotton Wool IP
+1367,Syringe
+1368,needle
+1369,Needle
+1370,I.V Cannula
+1371,Sterile Disposable Spinal Needle
+1372,"Urine Collecting Bag, Disposable"
+1373,Insulin Syringe
+1374,"Lancets, Round Sterile"
+1375,Baby Feeding Bottle
+1376,Specican
