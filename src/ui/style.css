@@ -1,0 +1,92 @@
+.stApp {
+    background-color: #f8f9fa;
+    color: #1a1a1a;
+}
+
+div[data-testid="stMetric"] {
+    background: linear-gradient(135deg, #ffffff 0%, #f5f7fa 100%);
+    border: 1px solid #d1d5db;
+    border-left: 4px solid #0969da;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.logo-text {
+    font-weight: 800 !important;
+    font-size: 40px !important;
+    color: #0969da !important;
+    padding-top: 0px;
+    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+}
+
+.user-profile {
+    font-weight: 500;
+    color: #4b5563;
+    text-align: right;
+}
+
+.head-text {
+    font-weight: 600 !important;
+    font-size: 24px !important;
+    color: #1a1a1a !important;
+    padding-top: 0px;
+}
+
+[data-testid="stMetricLabel"] p {
+    color: #4b5563 !important;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+[data-testid="stMetricValue"] > div {
+    color: #0969da !important;
+    -webkit-text-fill-color: #0969da !important;
+    font-weight: 700 !important;
+}
+
+.stTextArea textarea {
+    background-color: #ffffff !important;
+    color: #1a1a1a !important;
+    border: 1px solid #d1d5db !important;
+    border-radius: 8px !important;
+    padding-top: 0.5rem !important;
+    caret-color: #0969da !important;
+}
+
+div.stButton > button {
+    font-weight: 600 !important;
+    background-color: #238636 !important;
+    border: 1px solid #238636 !important;
+    color: #ffffff !important;
+    border-radius: 6px !important;
+}
+
+div.stButton > button:hover {
+    background-color: #2ea043 !important;
+    border-color: #2ea043 !important;
+    cursor: pointer;
+}
+
+h2[id] {
+    padding-top: 50px;
+    margin-top: 20px;
+    color: #0969da;
+}
+
+/* Enhanced hover effects */
+[data-testid="stButton"] > button {
+    transition: all 0.2s ease;
+}
+
+/* Expander styling */
+[data-testid="stExpander"] {
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+}
+
+/* Data frame styling */
+[data-testid="stDataFrame"] {
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+}

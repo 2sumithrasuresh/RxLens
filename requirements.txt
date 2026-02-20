@@ -3,3 +3,9 @@ numpy
 scikit-learn
 rapidfuzz
 pytest
+flask>=2.0
+flask-cors>=3.0
+requests>=2.28
+streamlit>=1.0
+streamlit-extras>=0.2
+

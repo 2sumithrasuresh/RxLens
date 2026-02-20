@@ -108,7 +108,7 @@ if __name__ == '__main__':
     medicines, drug_index = load_data(med_csv, comp_csv)
     # pick paracetamol tablet id 22 as example
     if 22 in medicines:
-        subs = find_substitutes(22, medicines, drug_index, top_k=5)
+        subs = find_substitutes(4, medicines, drug_index, top_k=5)
         if not subs:
             print("No substitutes found for medicine id 22")
         for s in subs:
