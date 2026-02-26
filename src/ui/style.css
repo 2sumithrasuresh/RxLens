@@ -1,0 +1,70 @@
+.stApp{
+        background-color: #f8f9fa;
+        color: #000;
+    }
+    div[data-testid="stMetric"] {
+        background-color: #ffffff;
+        border: 1px solid #e0e0e0;
+        padding: 15px;
+        border-radius: 10px;
+        
+        cursor: pointer;
+    }
+    .logo-text {
+        font-weight: 800 !important;
+        font-size: 40px !important;
+        color: #007bff !important; /* RxLens Blue */
+        padding-top: 0px;
+        font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+    }
+    .user-profile {
+        font-weight: 500;
+        color: #555555; 
+        text-align: right;
+    }
+    .head-text {
+        font-weight: 600 !important;
+        font-size: 24px !important;
+        color: #000000 !important; 
+        padding-top: 0px;
+        
+    }
+   
+    [data-testid="stMetricLabel"] p {
+        color: #333333 !important;
+        font-weight: 600;
+        font-size: 20px;
+        
+    }
+    [data-testid="stMetricValue"] > div {
+        color: #007bff !important;
+        -webkit-text-fill-color: #007bff !important; 
+    }
+    .stTextArea textarea {
+    background-color: #ffffff !important;
+    color: #31333f !important;
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 8px !important;
+    background-size: 100% 2.5rem !important; 
+    padding-top: 0.5rem !important;
+    caret-color: #09090a !important;
+    }
+
+div.stButton > button {
+    font-weight: 600 !important;
+    background-color: #a9a2a2; 
+    border: none !important;
+    
+}
+
+div.stButton > button:hover {
+    background-color: #2869ae !important; 
+    cursor: pointer;
+}
+
+
+    h2[id] {
+        padding-top: 50px;
+        margin-top: 20px;
+        color: #007bff;
+    }
