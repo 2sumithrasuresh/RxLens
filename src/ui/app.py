@@ -8,6 +8,11 @@ import pandas as pd
 import requests
 from typing import Dict, Optional
 
+# Add src to python path to allow imports
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(os.path.dirname(SCRIPT_DIR))
+from ml.chat import RxLensChatbot
+
 st.set_page_config(layout="wide", page_title="RxLens")
 
 # API Configuration
@@ -15,7 +20,7 @@ API_BASE_URL = os.getenv('API_URL', 'http://127.0.0.1:5000')
 API_TIMEOUT = 30
 
 # Get the directory of the current script
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+# SCRIPT_DIR is already defined above
 
 # Data paths
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(SCRIPT_DIR)), 'data', 'refined')
@@ -74,65 +79,94 @@ def scroll_to(anchor_id):
     """, height=0)
 
 def apply_theme_css(is_dark: bool):
-    """Apply professional dark or light theme CSS"""
+    """Apply professional dark or light theme CSS over the base style.css"""
     if is_dark:
         dark_css = """
         <style>
-        /* Main background */
+        /* Main background - Deep premium dark */
         .stApp {
-            background-color: #0f1419 !important;
-            color: #e1e4e8 !important;
-        }
-        
-        /* Text elements */
-        p, span, div {
-            color: #e1e4e8 !important;
-        }
-        
-        /* Headers */
-        h1, h2, h3, h4, h5, h6 {
+            background: linear-gradient(135deg, #090c10 0%, #161b22 100%) !important;
             color: #f0f6fc !important;
         }
         
-        /* Metric cards - professional blue accent */
-        [data-testid="stMetric"] {
-            background: linear-gradient(135deg, #161b22 0%, #0d1117 100%) !important;
-            border: 1px solid #30363d !important;
-            border-left: 4px solid #1f6feb !important;
-            border-radius: 8px !important;
-        }
-        
-        [data-testid="stMetricLabel"] {
+        /* Text overrides */
+        p, span, div, label {
             color: #c9d1d9 !important;
         }
         
-        [data-testid="stMetricValue"] {
-            color: #58a6ff !important;
+        h1, h2, h3, h4, th {
+            color: #ffffff !important;
+        }
+
+        /* Logo text glow in dark mode */
+        .logo-text {
+            background: linear-gradient(135deg, #58a6ff, #a371f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 20px rgba(88, 166, 255, 0.3);
         }
         
-        /* Buttons */
-        [data-testid="stButton"] > button {
-            background-color: #238636 !important;
-            border: 1px solid #238636 !important;
+        /* Metric cards - Glassmorphism Dark */
+        div[data-testid="stMetric"] {
+            background: rgba(22, 27, 34, 0.6) !important;
+            backdrop-filter: blur(16px) !important;
+            -webkit-backdrop-filter: blur(16px) !important;
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+            border-left: 5px solid #58a6ff !important;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+        }
+        
+        div[data-testid="stMetric"]:hover {
+            box-shadow: 0 15px 35px rgba(88, 166, 255, 0.15) !important;
+        }
+        
+        [data-testid="stMetricLabel"] p {
+            color: #8b949e !important;
+        }
+        
+        [data-testid="stMetricValue"] > div {
+            color: #ffffff !important;
+        }
+        
+        /* Inputs & Textareas Dark */
+        .stTextArea textarea, [data-testid="stChatInput"] textarea, input {
+            background: rgba(13, 17, 23, 0.8) !important;
             color: #f0f6fc !important;
-            font-weight: 600 !important;
+            border: 1px solid #30363d !important;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.2) !important;
         }
         
-        [data-testid="stButton"] > button:hover {
-            background-color: #2ea043 !important;
-            border-color: #2ea043 !important;
+        .stTextArea textarea:focus, [data-testid="stChatInput"] textarea:focus {
+            border-color: #58a6ff !important;
+            box-shadow: 0 0 0 4px rgba(88, 166, 255, 0.15) !important;
         }
         
-        /* Data frames */
+        /* Buttons Dark */
+        div.stButton > button {
+            background: linear-gradient(135deg, #1f6feb 0%, #388bfd 100%) !important;
+            box-shadow: 0 4px 14px rgba(31, 111, 235, 0.4) !important;
+        }
+        
+        button[kind="secondary"] {
+            background: rgba(33, 38, 45, 0.8) !important;
+            color: #c9d1d9 !important;
+            border: 1px solid #30363d !important;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3) !important;
+        }
+        button[kind="secondary"]:hover {
+            background: #30363d !important;
+            border-color: #8b949e !important;
+        }
+        
+        /* Data frames Dark */
         [data-testid="stDataFrame"] {
             background-color: #0d1117 !important;
+            border-color: #30363d !important;
         }
         
-        /* DataFrame text */
         [data-testid="stDataFrame"] th {
             background-color: #161b22 !important;
             color: #58a6ff !important;
-            font-weight: 600 !important;
         }
         
         [data-testid="stDataFrame"] td {
@@ -140,33 +174,31 @@ def apply_theme_css(is_dark: bool):
             border-color: #30363d !important;
         }
         
-        /* Input fields */
-        input, textarea, [data-testid="stTextArea"] {
-            background-color: #0d1117 !important;
-            color: #e1e4e8 !important;
-            border: 1px solid #30363d !important;
+        /* Expanders & Dividers Dark */
+        [data-testid="stExpander"] {
+            background: rgba(22, 27, 34, 0.5) !important;
+            border-color: #30363d !important;
         }
-        
-        /* Divider */
         hr {
             border-color: #30363d !important;
         }
         
-        /* Expanders */
-        [data-testid="stExpander"] {
-            border: 1px solid #30363d !important;
-        }
-        
-        /* Success/Info/Warning boxes */
-        [data-testid="stSuccess"], [data-testid="stInfo"], 
-        [data-testid="stWarning"], [data-testid="stError"] {
-            background-color: #161b22 !important;
-            border-left: 4px solid #58a6ff !important;
-        }
-        
-        /* Sidebar */
+        /* Sidebar Dark */
         [data-testid="stSidebar"] {
             background-color: #0d1117 !important;
+            border-right: 1px solid #30363d !important;
+        }
+        
+        /* Chat UI components Dark */
+        [data-testid="stChatMessage"] {
+            background: rgba(22, 27, 34, 0.7) !important;
+            backdrop-filter: blur(10px) !important;
+            border: 1px solid #30363d !important;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2) !important;
+        }
+        
+        [data-testid="stChatMessage"] p {
+            color: #e1e4e8 !important;
         }
         </style>
         """
@@ -203,6 +235,12 @@ if 'analyzed' not in st.session_state:
     st.session_state.analyzed = False
 if 'analysis_results' not in st.session_state:
     st.session_state.analysis_results = None
+
+if 'messages' not in st.session_state:
+    st.session_state.messages = []
+
+if 'chatbot' not in st.session_state:
+    st.session_state.chatbot = RxLensChatbot()
 
 
 st.markdown('<p class = "head-text">Enter prescription</p>', unsafe_allow_html=True)
@@ -354,3 +392,37 @@ if st.session_state.analyzed and st.session_state.analysis_results:
         st.header("Not Found", anchor="issues-section")
         for med_name, result in not_found_medicines.items():
             st.warning(f"**{med_name}**: {result.get('error', 'Unknown error')}")
+
+    st.write("\n" * 10)
+    st.divider()
+
+    # --- Chatbot UI ---
+    st.markdown('<div id="chatbot-section"></div>', unsafe_allow_html=True)
+    st.header("Explanation Engine", anchor="chatbot-section")
+    st.write("Ask me anything about your medicines or health conditions.")
+
+    chat_container = st.container()
+    
+    # Display chat history (limit to last 10 messages for UI brevity if desired, but here we show all)
+    with chat_container:
+        for message in st.session_state.messages:
+            with st.chat_message(message["role"]):
+                st.markdown(message["content"])
+
+    # Chat input
+    if prompt := st.chat_input("Ask about side effects, interactions, or ingredients..."):
+        # Display user message
+        with st.chat_message("user"):
+            st.markdown(prompt)
+        
+        # Add to session history
+        st.session_state.messages.append({"role": "user", "content": prompt})
+        
+        # Display assistant response
+        with st.chat_message("assistant"):
+            with st.spinner("Thinking..."):
+                response = st.session_state.chatbot.generate_response(prompt)
+                st.markdown(response)
+                
+        # Add to session history
+        st.session_state.messages.append({"role": "assistant", "content": response})

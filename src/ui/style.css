@@ -1,92 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+/* Global Font Application */
+.stApp,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+button,
+input,
+textarea {
+    font-family: 'Outfit', sans-serif !important;
+}
+
+/* Light Theme Main Background - Soft Gradient */
 .stApp {
-    background-color: #f8f9fa;
-    color: #1a1a1a;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
+    color: #1a1a2e;
 }
 
-div[data-testid="stMetric"] {
-    background: linear-gradient(135deg, #ffffff 0%, #f5f7fa 100%);
-    border: 1px solid #d1d5db;
-    border-left: 4px solid #0969da;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-}
-
+/* Logo Typography */
 .logo-text {
     font-weight: 800 !important;
-    font-size: 40px !important;
-    color: #0969da !important;
+    font-size: 46px !important;
+    background: linear-gradient(135deg, #0969da, #60a5fa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     padding-top: 0px;
-    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+    letter-spacing: -1px;
 }
 
-.user-profile {
-    font-weight: 500;
-    color: #4b5563;
-    text-align: right;
+/* Headers */
+h1,
+h2,
+h3 {
+    font-weight: 700 !important;
+    color: #1e293b;
+    letter-spacing: -0.5px;
 }
 
-.head-text {
-    font-weight: 600 !important;
-    font-size: 24px !important;
-    color: #1a1a1a !important;
-    padding-top: 0px;
+/* Smooth Base Animations for interactive elements */
+button,
+input,
+textarea,
+div[data-testid="stMetric"],
+[data-testid="stChatMessage"] {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Glassmorphism Metrics Cards */
+div[data-testid="stMetric"] {
+    background: rgba(255, 255, 255, 0.7) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    border-left: 5px solid #0969da !important;
+    padding: 20px !important;
+    border-radius: 16px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+}
+
+div[data-testid="stMetric"]:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 15px 35px rgba(9, 105, 218, 0.15) !important;
 }
 
 [data-testid="stMetricLabel"] p {
-    color: #4b5563 !important;
-    font-weight: 600;
-    font-size: 14px;
+    color: #64748b !important;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
-[data-testid="stMetricValue"] > div {
-    color: #0969da !important;
-    -webkit-text-fill-color: #0969da !important;
-    font-weight: 700 !important;
+[data-testid="stMetricValue"]>div {
+    color: #0f172a !important;
+    font-weight: 800 !important;
+    font-size: 32px !important;
 }
 
-.stTextArea textarea {
-    background-color: #ffffff !important;
-    color: #1a1a1a !important;
-    border: 1px solid #d1d5db !important;
-    border-radius: 8px !important;
-    padding-top: 0.5rem !important;
-    caret-color: #0969da !important;
+/* Premium Text Areas and Inputs */
+.stTextArea textarea,
+[data-testid="stChatInput"] textarea {
+    background: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(10px) !important;
+    color: #0f172a !important;
+    border: 2px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    padding: 12px 16px !important;
+    font-size: 16px !important;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02) !important;
 }
 
-div.stButton > button {
+.stTextArea textarea:focus,
+[data-testid="stChatInput"] textarea:focus {
+    border-color: #0969da !important;
+    box-shadow: 0 0 0 4px rgba(9, 105, 218, 0.1) !important;
+    outline: none !important;
+}
+
+/* Stunning Buttons */
+div.stButton>button {
     font-weight: 600 !important;
-    background-color: #238636 !important;
-    border: 1px solid #238636 !important;
+    background: linear-gradient(135deg, #0969da 0%, #3b82f6 100%) !important;
+    border: none !important;
     color: #ffffff !important;
-    border-radius: 6px !important;
+    border-radius: 10px !important;
+    padding: 0.5rem 1.5rem !important;
+    box-shadow: 0 4px 14px rgba(9, 105, 218, 0.3) !important;
+    letter-spacing: 0.3px !important;
 }
 
-div.stButton > button:hover {
-    background-color: #2ea043 !important;
-    border-color: #2ea043 !important;
-    cursor: pointer;
+div.stButton>button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(9, 105, 218, 0.4) !important;
 }
 
-h2[id] {
-    padding-top: 50px;
-    margin-top: 20px;
-    color: #0969da;
+div.stButton>button:active {
+    transform: translateY(1px) !important;
 }
 
-/* Enhanced hover effects */
-[data-testid="stButton"] > button {
-    transition: all 0.2s ease;
+/* Secondary Button overrides (like the theme toggle) */
+button[kind="secondary"] {
+    background: rgba(255, 255, 255, 0.8) !important;
+    color: #0f172a !important;
+    border: 1px solid #cbd5e1 !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05) !important;
 }
 
-/* Expander styling */
+button[kind="secondary"]:hover {
+    background: #ffffff !important;
+    border-color: #94a3b8 !important;
+    transform: translateY(-2px) !important;
+}
+
+/* Chat Messages Light Mode */
+[data-testid="stChatMessage"] {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 16px !important;
+    padding: 1rem !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03) !important;
+    margin-bottom: 1rem !important;
+}
+
+[data-testid="stChatMessage"] p {
+    color: #334155 !important;
+    font-size: 15.5px !important;
+    line-height: 1.6 !important;
+}
+
+/* Dataframe and Expanders */
 [data-testid="stExpander"] {
-    border: 1px solid #d1d5db;
-    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.6) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px !important;
 }
 
-/* Data frame styling */
 [data-testid="stDataFrame"] {
-    border: 1px solid #d1d5db;
-    border-radius: 6px;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02) !important;
 }
