@@ -213,23 +213,18 @@ if 'dark_mode' not in st.session_state:
 # Apply theme
 apply_theme_css(st.session_state.dark_mode)
 
-col_logo, col_nav, col_user = st.columns([2, 4, 2])
+col_logo, col_nav, col_user = st.columns([2, 3.5, 1.5], gap="large")
 
 with col_logo:
     logo_path = os.path.join(SCRIPT_DIR, "assets/logo.png")
-    st.image(logo_path)
+    st.image(logo_path, width=220)
     
-st.write("\n")
 with col_user:
-    # Dark mode toggle button in top right
-    c1, c2 = st.columns([0.3, 1.7])
-    with c1:
-        theme_icon = "🌙" if not st.session_state.dark_mode else "☀️"
-        if st.button(theme_icon, key="theme_toggle", help="Toggle Dark/Light Mode"):
-            st.session_state.dark_mode = not st.session_state.dark_mode
-            st.rerun()
-    with c2:
-        st.markdown('<p class="user-profile">User </p>', unsafe_allow_html=True)
+    st.write("") # Add a tiny bit of vertical spacing
+    theme_text = "🌙 Dark Mode" if not st.session_state.dark_mode else "☀️ Light Mode"
+    if st.button(theme_text, key="theme_toggle", use_container_width=True):
+        st.session_state.dark_mode = not st.session_state.dark_mode
+        st.rerun()
 
 if 'analyzed' not in st.session_state:
     st.session_state.analyzed = False

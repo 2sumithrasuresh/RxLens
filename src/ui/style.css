@@ -168,3 +168,13 @@ button[kind="secondary"]:hover {
     border: 1px solid #e2e8f0 !important;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02) !important;
 }
+
+/* Hide default streamlit header and fix top padding */
+header[data-testid="stHeader"] {
+    display: none !important;
+}
+
+.block-container {
+    padding-top: 3rem !important;
+    padding-bottom: 2rem !important;
+}
