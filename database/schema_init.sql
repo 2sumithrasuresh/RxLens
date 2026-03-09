@@ -20,9 +20,11 @@ CREATE TABLE drugs (
 -- TABLE: brand_medicines
 -- ----------------------------------------------------------
 CREATE TABLE brand_medicines (
-    medicine_id INT AUTO_INCREMENT PRIMARY KEY,
-    brand_name VARCHAR(100) NOT NULL,
-    medicine_name VARCHAR(300) NOT NULL
+    medicine_id INT PRIMARY KEY,
+    medicine_name VARCHAR(300) NOT NULL,
+    manufacturer_name VARCHAR(255),
+    pack_size VARCHAR(150),
+    price DECIMAL(10,2)
 );
 
 -- ----------------------------------------------------------
