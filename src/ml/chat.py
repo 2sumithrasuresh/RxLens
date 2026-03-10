@@ -12,7 +12,7 @@ if api_key:
 class RxLensChatbot:
     def __init__(self):
         # Configure the model
-        # Using Gemini 1.5 Flash for fast, conversational responses
+        # Using Gemini 2.5 Flash for fast, conversational responses
         self.model = genai.GenerativeModel(
             model_name="gemini-2.5-flash",
             system_instruction=(
@@ -33,7 +33,9 @@ class RxLensChatbot:
         
     def start_chat(self, history=None):
         """Initializes a new chat session, optionally with previous history."""
-
+        # Convert Streamlit history format to Gemini format if needed, 
+        # but for simplicity we'll just manage history in Streamlit and send context.
+        # Actually, Gemini has a built-in chat object that manages history beautifully.
         gemini_history = []
         if history:
             for msg in history:

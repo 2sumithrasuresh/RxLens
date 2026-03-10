@@ -3,10 +3,6 @@ import pandas as pd
 import numpy as np
 import pickle
 import os
-import warnings
-
-# Suppress sklearn version warnings for pickle compatibility
-warnings.filterwarnings('ignore', category=UserWarning)
 
 class MedicineMatcher:
     def __init__(self, embedder):
@@ -17,17 +13,23 @@ class MedicineMatcher:
         self.embedder = embedder
         self.tfidf_matrix = None
         self.medicines_df = None
+        self.branded_df = None
         
-    def train(self, df, text_column='medicine_name'):
+    def train(self, generic_df, branded_df=None, text_column='search_text'):
         """
         Builds the validation matrix for the database.
         
         Args:
-            df (pd.DataFrame): DataFrame containing medicine data.
+            generic_df (pd.DataFrame): DataFrame containing generic medicine data.
+            branded_df (pd.DataFrame): DataFrame containing branded medicine data.
             text_column (str): Column to vectorise.
         """
-        self.medicines_df = df.reset_index(drop=True)
+        self.medicines_df = generic_df.reset_index(drop=True)
+        if branded_df is not None:
+            self.branded_df = branded_df.reset_index(drop=True)
+            
         # Fit embedder on the corpus
+        print("Fitting embedder...")
         self.embedder.fit(self.medicines_df[text_column])
         # Transform the corpus
         print("Building search index...")
@@ -47,8 +49,18 @@ class MedicineMatcher:
         if self.tfidf_matrix is None:
             raise ValueError("Model not trained. Call train() first.")
             
+        search_query = query
+        branded_info = None
+        
+        # Check if query matches a branded medicine
+        if self.branded_df is not None:
+            brand_match = self.branded_df[self.branded_df['brand_name'].str.lower() == query.lower()]
+            if not brand_match.empty:
+                search_query = brand_match.iloc[0]['composition']
+                branded_info = brand_match.iloc[0].to_dict()
+                
         # Vectorise query
-        query_vec = self.embedder.transform(query)
+        query_vec = self.embedder.transform(search_query)
         
         # Calculate cosine similarity
         cosine_sim = cosine_similarity(query_vec, self.tfidf_matrix).flatten()
@@ -63,14 +75,15 @@ class MedicineMatcher:
         # Filter out zero-similarity matches
         results = results[results['similarity_score'] > 0.0]
         
-        return results
+        return results, branded_info
 
     def save(self, filepath):
         with open(filepath, 'wb') as f:
             pickle.dump({
                 'embedder': self.embedder,
                 'tfidf_matrix': self.tfidf_matrix,
-                'medicines_df': self.medicines_df
+                'medicines_df': self.medicines_df,
+                'branded_df': self.branded_df
             }, f)
             print(f"Model saved to {filepath}")
             
@@ -78,16 +91,12 @@ class MedicineMatcher:
     def load(filepath):
         if not os.path.exists(filepath):
             raise FileNotFoundError(f"Model file {filepath} not found.")
-       
-        try:
-            with open(filepath, 'rb') as f:
-                # Attempt to load with protocol used during save
-                data = pickle.load(f, encoding='utf-8')
             
-            matcher = MedicineMatcher(data['embedder'])
-            matcher.tfidf_matrix = data['tfidf_matrix']
-            matcher.medicines_df = data['medicines_df']
-            return matcher
-        except Exception as e:
-            # If unpickling fails, raise more informative error
-            raise ValueError(f"Failed to load ML model: {str(e)}. The model may be corrupted or incompatible with the current scikit-learn version. Please retrain by running: python src/ml/demo.py")
+        with open(filepath, 'rb') as f:
+            data = pickle.load(f)
+        
+        matcher = MedicineMatcher(data['embedder'])
+        matcher.tfidf_matrix = data['tfidf_matrix']
+        matcher.medicines_df = data['medicines_df']
+        matcher.branded_df = data.get('branded_df', None)
+        return matcher

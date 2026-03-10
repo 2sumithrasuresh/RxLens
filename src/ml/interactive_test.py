@@ -5,7 +5,7 @@ import pandas as pd
 # Add src to python path
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
-from ml.data_loader import load_data
+from ml.data_loader import build_searchable_dataset
 from ml.features import ContentEmbedder
 from ml.model import MedicineMatcher
 
@@ -24,15 +24,16 @@ def main():
         except Exception as e:
             print(f"Error loading model: {e}")
             print("Will retrain model.")
+            matcher = None
     
     # Train if not loaded
     if matcher is None:
         print("Loading data and training model...")
         try:
-            df = load_data()
+            generic_df, branded_df = build_searchable_dataset()
             embedder = ContentEmbedder()
             matcher = MedicineMatcher(embedder)
-            matcher.train(df)
+            matcher.train(generic_df, branded_df)
             print("Model trained.")
         except Exception as e:
             print(f"Critical Error: {e}")
@@ -52,8 +53,12 @@ def main():
             if not query:
                 continue
                 
-            matches = matcher.find_matches(query, top_k=5)
+            matches, branded_info = matcher.find_matches(query, top_k=5)
             
+            if branded_info:
+                 print(f"\n[ Brand Matched: '{branded_info['brand_name']}' - '{branded_info['medicine_name']}' ]")
+                 print(f"[ Composition Used for Search: {branded_info['composition']} ]")
+
             if matches.empty:
                 print(f"\nNo matches found for '{query}'.")
                 continue
