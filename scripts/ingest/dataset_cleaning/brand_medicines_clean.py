@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT_DIR = Path(__file__).resolve().parents[3]
 
-input_file = ROOT_DIR / "data/raw/test_brand_med_input.csv"
+input_file = ROOT_DIR / "data/raw/brand_medicine.csv"
 
 drugs_file = ROOT_DIR / "data/refined/drugs.csv"
 brand_file = ROOT_DIR / "data/refined/brand_medicines.csv"

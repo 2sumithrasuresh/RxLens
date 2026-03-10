@@ -78,17 +78,7 @@ class MedicineMatcher:
     def load(filepath):
         if not os.path.exists(filepath):
             raise FileNotFoundError(f"Model file {filepath} not found.")
-<<<<<<< HEAD
-            
-        with open(filepath, 'rb') as f:
-            data = pickle.load(f)
-        
-        matcher = MedicineMatcher(data['embedder'])
-        matcher.tfidf_matrix = data['tfidf_matrix']
-        matcher.medicines_df = data['medicines_df']
-        return matcher
-=======
-        
+       
         try:
             with open(filepath, 'rb') as f:
                 # Attempt to load with protocol used during save
@@ -101,4 +91,3 @@ class MedicineMatcher:
         except Exception as e:
             # If unpickling fails, raise more informative error
             raise ValueError(f"Failed to load ML model: {str(e)}. The model may be corrupted or incompatible with the current scikit-learn version. Please retrain by running: python src/ml/demo.py")
->>>>>>> origin/core_logic
